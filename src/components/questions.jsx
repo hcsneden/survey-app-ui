@@ -2,63 +2,61 @@ import React from "react"
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import './questions.css'
 
 const Questions = () => {
     return (
-      <Form className="form">
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-          <Form.Label column sm={2}>
-            Email
-          </Form.Label>
-          <Col sm={10}>
-            <Form.Control type="email" placeholder="Email" />
-          </Col>
-        </Form.Group>
-  
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
-          <Form.Label column sm={2}>
-            Password
-          </Form.Label>
-          <Col sm={10}>
-            <Form.Control type="password" placeholder="Password" />
-          </Col>
-        </Form.Group>
-        <fieldset>
-          <Form.Group as={Row} className="mb-3">
-            <Form.Label as="legend" column sm={2}>
-              Radios
-            </Form.Label>
-            <Col sm={10}>
-              <Form.Check
-                type="radio"
-                label="first radio"
-                name="formHorizontalRadios"
-                id="formHorizontalRadios1"
-              />
-              <Form.Check
-                type="radio"
-                label="second radio"
-                name="formHorizontalRadios"
-                id="formHorizontalRadios2"
-              />
-              <Form.Check
-                type="radio"
-                label="third radio"
-                name="formHorizontalRadios"
-                id="formHorizontalRadios3"
-              />
-            </Col>
-          </Form.Group>
-        </fieldset>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
-          <Col sm={{ span: 10, offset: 2 }}>
-            <Form.Check label="Remember me" />
-          </Col>
-        </Form.Group>
+        <Form className="form">
+            <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                <Form.Label column sm={3}>
+                    Gender identity
+                </Form.Label>
+                <Col sm={9}>
+                    <Form.Control type="text" placeholder="" />
+                </Col>
+            </Form.Group>
 
-      </Form>
+            <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+                <Form.Label column sm={3}>
+                    Sexual Orientation
+                </Form.Label>
+                <Col sm={9}>
+                    <Form.Control type="text" placeholder="" />
+                </Col>
+            </Form.Group>
+            <fieldset>
+                <Form.Group as={Row} className="mb-3">
+                    <Form.Label as="legend" column sm={3}>
+                        Oral sex: if ur having it, what are ya calling it?
+                    </Form.Label>
+                    <Col sm={9}>
+                        <Form.Check
+                            type="radio"
+                            label="Eating out"
+                            name="formHorizontalRadios"
+                            id="formHorizontalRadios1"
+                        />
+                        <Form.Check
+                            type="radio"
+                            label="Going Down"
+                            name="formHorizontalRadios"
+                            id="formHorizontalRadios2"
+                        />
+                        <Form.Check
+                            type="radio"
+                            label="Other"
+                            name="formHorizontalRadios"
+                            id="formHorizontalRadios3"
+                        />
+                    </Col>
+                </Form.Group>
+            </fieldset>
+            <Button className="button" variant="primary" type="submit">
+                Submit
+            </Button>
+        </Form>
     );
-  }
+}
 
 export default Questions

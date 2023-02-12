@@ -6,3 +6,9 @@
 .form{
     padding: 40px 25% 0 25%
 }
+
+.button{
+    padding: 10px 25%;
+    margin: 10px 25%;
+    background-color: #466984;
+}
