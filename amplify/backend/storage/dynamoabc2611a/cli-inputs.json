@@ -1,0 +1,10 @@
+{
+  "resourceName": "dynamoabc2611a",
+  "tableName": "surveyresponses",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

@@ -3,9 +3,15 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import './questions.css'
+import './questions.css';
+import { API } from 'aws-amplify';
 
 const Questions = () => {
+    const postAnswer = (details) => {
+        const response = API.post('surveyappuic269e0c8', '/item', {id: '12345', gender: 'female', sexualOrientation: 'gay', })
+        console.log(response)
+    } 
+    
     return (
         <Form className="form">
             <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
@@ -52,7 +58,7 @@ const Questions = () => {
                     </Col>
                 </Form.Group>
             </fieldset>
-            <Button className="button" variant="primary" type="submit">
+            <Button className="button" variant="primary" type="submit" onClick={postAnswer}>
                 Submit
             </Button>
         </Form>

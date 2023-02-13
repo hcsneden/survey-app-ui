@@ -1,0 +1,26 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify32ddc291f8194-staging-211501-authRole",
+      "UnauthRoleArn": "arn:aws:iam::444311061836:role/amplify-amplify32ddc291f8194-staging-211501-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::444311061836:role/amplify-amplify32ddc291f8194-staging-211501-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify32ddc291f8194-staging-211501-deployment",
+      "UnauthRoleName": "amplify-amplify32ddc291f8194-staging-211501-unauthRole",
+      "StackName": "amplify-amplify32ddc291f8194-staging-211501",
+      "StackId": "arn:aws:cloudformation:us-east-2:444311061836:stack/amplify-amplify32ddc291f8194-staging-211501/500074e0-ab1a-11ed-b9ce-0a5b55510948",
+      "AmplifyAppId": "d2wij8kjdalvkx"
+    },
+    "categories": {
+      "function": {
+        "surveyappuic269e0c8": {
+          "deploymentBucketName": "amplify-amplify32ddc291f8194-staging-211501-deployment",
+          "s3Key": "amplify-builds/surveyappuic269e0c8-715a6c372f4c45526f42-build.zip"
+        }
+      },
+      "storage": {
+        "dynamoabc2611a": {}
+      }
+    }
+  }
+}

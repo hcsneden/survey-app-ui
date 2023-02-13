@@ -1,0 +1,47 @@
+{
+  "function": {
+    "surveyappuic269e0c8": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "dynamoabc2611a"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_surveyappuic269e0c8_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "surveyappuic269e0c8"
+        }
+      ]
+    },
+    "AMPLIFY_function_surveyappuic269e0c8_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "surveyappuic269e0c8"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "dynamoabc2611a": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}
