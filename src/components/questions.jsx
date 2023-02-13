@@ -8,7 +8,7 @@ import { API } from 'aws-amplify';
 
 const Questions = () => {
     const postAnswer = (details) => {
-        const response = API.post('surveyappuic269e0c8', '/item', {id: '12345', gender: 'female', sexualOrientation: 'gay', })
+        const response = API.post('surveyappuic269e0c8-staging', '/item', {id: '12345', gender: 'female', sexualOrientation: 'gay', })
         console.log(response)
     } 
     
